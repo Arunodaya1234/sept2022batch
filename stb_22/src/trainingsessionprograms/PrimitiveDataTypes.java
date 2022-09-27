@@ -2,10 +2,11 @@ package trainingsessionprograms;
 
 public class PrimitiveDataTypes 
 {
-
+	static boolean val=true;
+	static int b;
 	public static void main(String[] args) 
 	{
-		Long a=100L;//8 bit or 1 byte
+		int a=100;//8 bit or 1 byte
 		System.out.println("The value of byte a :"+a);
 		System.out.println("Size of Byte:"+(Byte.SIZE/8)+"byte");
 		short b=400;//16bit or 2 bytes
@@ -14,8 +15,14 @@ public class PrimitiveDataTypes
 		System.out.println("Size of int:"+c+" "+(Integer.SIZE/8)+"byte");
 		long d=400L;//64bit or 8byte
 		System.out.println("Size of Long:"+d+" "+(Long.SIZE/8)+"byte");
-		calculate_distance();
-		calculate_distance1();
+		float e=13.5678898098080f;
+		System.out.println("Size of Float"+ e+" "+(Float.SIZE/8)+"byte");
+		double f=353656.7875875875757d;
+		System.out.println("Size of double"+ f+" "+(Double.SIZE/8)+"byte");
+		char ch='D';
+		System.out.println("Size of char"+ ch+" "+(Character.SIZE/8)+"byte");
+		
+		System.out.println("Boolean value of val :"+val);
 	}
 	
 	public static void calculate_distance()
